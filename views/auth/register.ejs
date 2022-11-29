@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('../partials/head.ejs', { head }); -%>
+
+<body>
+    <h1 class="alignCentre">REGISTER</h1>
+    <%- include('../partials/nav.ejs', { user: body.user }); -%>
+    <%- include('../partials/userAccessForm.ejs', { route: '/register' }); -%>
+</body>
+</html>

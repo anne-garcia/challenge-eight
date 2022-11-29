@@ -1,0 +1,15 @@
+<nav class="alignCentre">
+    <a href="/">Home</a> |
+    <a href="/breeds">Breeds</a> |
+    <a href="/facts">Facts</a> |
+    <% if(!!user) { %>
+    <a href="/logout">Logout</a> |
+    <% } else { %>
+    <a href="/login">Login</a> |
+    <% } %>    
+    <a href="/register">Register</a>
+
+    <% if(!!user) { %>
+    &nbsp;| <span><strong>Welcome <%= user.username %></strong></span>
+    <% } %>
+</nav>
